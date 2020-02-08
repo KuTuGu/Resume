@@ -46,11 +46,12 @@ html, body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
-  justify-content: space-around;
-  width: 80%;
+  justify-content: space-between;
+  width: 794px;
+  height: 1123px;
   background-color: white;
   color: #2c3e50;
-  padding: 40px 15px;
+  padding: 20px 15px;
   margin: 20px auto;
   overflow: hidden;
   box-sizing: border-box;
@@ -60,18 +61,18 @@ p {
 }
 .mainContent, .sideBar{
   display: inline-block;
-  width: 60%;
+  width: 70%;
 }
 .sideBar{
-  width: 30%;
-  padding: 25px;
+  width: 23%;
+  padding: 25px 0 25px 25px;
   border-left: solid 1px black; 
   display: inline-flex;
   flex-wrap: wrap;
   align-content: space-around;
 }
 .projectExperience{
-  margin: 20px 0;
+  margin: 15px 0;
   font-size: 20px;
   width: 30%;
   text-align: center;

@@ -40,14 +40,16 @@ export default {
 }
 .smallTitle{
   display: inline-block;
-  padding: 5px 25px;
+  padding: 2px 25px;
   margin-left: 20px; 
 }
 ul{
-  padding-right: 20px;
+  padding-right: 10px;
+  padding-inline-start: 2em;
 }
 li{
   word-break:break-all;
+  font-size: 14px;
 }
 .leftMove{
   margin-left: -25px;
