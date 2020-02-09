@@ -28,7 +28,7 @@ export default {
   text-align: center;
   background-color: #333333;
   color: white;
-  padding: 5px;
+  padding: 2px 5px;
   border: solid 1px black;
 }
 .title-white{
@@ -50,6 +50,7 @@ ul{
 li{
   word-break:break-all;
   font-size: 14px;
+  margin: 5px 0;
 }
 .leftMove{
   margin-left: -25px;
