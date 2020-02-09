@@ -1,16 +1,16 @@
 <template>
   <div id="app">
+    <div class="sideBar">
+      <div v-for="i of Info.sideBar" :key="i">
+        <InfoItem :Info="i" :smallTitle="true"/>
+      </div>
+    </div>
     <div class="mainContent">
       <PersonalInfo :Info="Info.PersonalInfo" />
       <!-- <ProjectExperience :Info="Info.ProjectExperience" /> -->
       <div class="projectExperience">项目经历</div>
       <div v-for="i of Info.ProjectExperience" :key="i">
         <InfoItem :Info="i" :whiteTitle="true" />
-      </div>
-    </div>
-    <div class="sideBar">
-      <div v-for="i of Info.sideBar" :key="i">
-        <InfoItem :Info="i" :smallTitle="true"/>
       </div>
     </div>
   </div>
@@ -61,12 +61,13 @@ p {
 }
 .mainContent, .sideBar{
   display: inline-block;
-  width: 70%;
+  width: 72%;
 }
 .sideBar{
-  width: 23%;
-  padding: 25px 0 25px 25px;
-  border-left: solid 1px black; 
+  width: 24%;
+  margin-left: 8px;
+  padding: 25px 8px 25px 0;
+  border-right: solid 1px black; 
   display: inline-flex;
   flex-wrap: wrap;
   align-content: space-around;
