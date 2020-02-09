@@ -1,4 +1,4 @@
-# SimpleSceneEditor
+# MyServer
 
 ![Personal skill tree](./docs/skillTree.jpg)
 
@@ -8,7 +8,8 @@
 
 ```
 npm install
-npm run start
+
+npm run serve
 
 npm run build
 ```

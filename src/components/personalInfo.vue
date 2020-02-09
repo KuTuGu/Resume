@@ -23,13 +23,13 @@ export default {
 
 <style>
 .personalInfo{
-    padding: 0 20% 20px 10px;
+    padding: 0 10% 20px 10px;
     border-bottom: solid 1px black;
 }
 .signature{
     font-weight: bold;
     border: solid 1px black;
-    padding: 5px 10px;
+    padding: 2px 10px;
     margin-left: -10px;
 }
 .name{
