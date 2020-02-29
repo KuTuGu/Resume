@@ -6,31 +6,32 @@
                 "2019 暑假参加 GSOC 开源活动，为 OpenWISP 组织重写一个 NetJSONGraph.js 库，这个库使用 Canvas 绘制网络设备拓扑，支持力导布局和地理底图。",
                 "在开发前期，我调研了很多可视化库。从底层的 ThreeJS、PixiJS、ZRender，到成熟的 D3、Highcharts、Echarts、SigmaJS 等等，加深了我对可视化的理解。这也使得我在中期开发时游刃有余，开发之余还修补了一些第三方插件的 bug。",
                 "以一个库作者的角度进行设计，拓展了我平时解决问题的思路。在对整个库进行重写的过程中，不断加深我对项目文件划分和代码规范的理解。我必须考虑到所有情况，拆分函数、健壮性测试、兼容旧版本API、代码规范、可迭代、性能等问题。",
-                "最终的结果？使用了什么技术方案，通过？评价？，在和 mentor 交流过程中，收获是什么？",
-                "年底还以 mentor身份，参与了 GCI 的开源活动，帮助高校学生接触开源项目，提升编程技能，与他们一同完善这个项目。"
+                "最终采用Echarts + Leaflet框架完成了对整个项目的重写，主要难点在于两个框架的不兼容和性能问题",
+                "通过这个项目对开源了解加深，年底还以 mentor 身份，参与了 GCI 的开源活动，帮助高校学生接触开源项目，提升编程技能，与他们一同完善这个项目。"
             ]
         },
         {
-            "title": "菁程——任务驱动型大学生求职平台",
+            "title": "个人服务器",
             "msg": [
-                "菁程是一个校企合作求职平台，学生通过完成企业发布的任务求职，企业通过菁程直接寻找校园精英。获 \"互联网+\" 省赛银奖。",
-                "项目采用 TypeScript/React/dva/umijs 技术栈。我主要负责任务发布、列表、详情等主要模块的开发。",
-                "亮点？"
+                "该项目主要通过搭建个人后端服务器，来帮助自己更方便地学习前后端新技术。",
+                "项目主要架构：traefik / jaeger / prometheus负责整个docker集群的网关代理、负载均衡、监控、报警、追踪等；",
+                "在其上搭建了serverless框架，后端技术栈nodejs / GraphQL / mongoDB；",
+                "前端利用Vue框架，搭建demo的展示页面，WebGL、WebRTC、blog等。"
             ]
         },
         {
             "title": "木犀工作台——木犀团队内部协作工具",
             "msg": [
                 "木犀工作台是团队内部协作工具，包括项目管理，文档库，内部社交圈等等功能",
-                "项目采用 React/Redux 技术栈，我主要负责个人设置/成员管理/权限控制等模块的前端开发。",
-                "亮点：通过无限列表，Redux 的引入，解决了 xxx 问题"
+                "项目采用 React / Redux 技术栈，我主要负责个人设置 / 成员管理 / 权限控制等模块的前端开发。",
+                "亮点：通过虚拟化Dom，解决了无限列表的性能问题"
             ]
         },
         {
-            "title": "个人服务器",
+            "title": "菁程——任务驱动型大学生求职平台",
             "msg": [
-                "该项目主要是想搭建个人后端服务器，来帮助自己更方便地学习前后端新技术。",
-                "项目采用NodeJS + Express技术栈，还在不断更新优化，目前涉及到的技术有：http2、mongoDB、GraphQL、docker、WebRTC、Manifest / Service Worker、Serverless等。"
+                "菁程是一个校企合作求职平台，学生通过完成企业发布的任务求职，企业通过菁程寻找校园精英。获 \"互联网+\" 省赛银奖。",
+                "项目采用 TypeScript / React / dva / umijs 技术栈。我主要负责任务发布、列表、详情等主要模块的开发。"
             ]
         }
     ],
@@ -51,7 +52,7 @@
             "msg": [
                 "Phone：17610603152",
                 "Email：zhongliwang48@gmail.com",
-                "Github:  github.com/KuTuGu"
+                "Github: github.com/KuTuGu"
             ]
         },
         {
@@ -75,12 +76,12 @@
         },
         {
             "title": "项目链接​",
-            "msg": [
-                "NetJSONGraph.js: https://github.com/openwisp/netjsongraph.js/tree/gsoc2019",
-                "H5：https://github.com/Muxi-Studio/freshman2018_muxi_h5",
-                "Workbench：https://github.com/Muxi-X/muxi_workbench_fe",
-                "MyServer: https://github.com/KuTuGu/MyServer"
-            ]
+            "msg": {
+                "NetJSONGraph.js": "https://github.com/openwisp/netjsongraph.js/tree/gsoc2019",
+                "Workbench": "https://github.com/Muxi-X/muxi_workbench_fe",
+                "MyServer": "https://github.com/KuTuGu/MyServer",
+                "Blog": "http://kutugu.github.io/"
+            }
         }
     ]
 }

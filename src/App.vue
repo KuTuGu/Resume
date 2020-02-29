@@ -48,7 +48,7 @@ html, body{
   display: flex;
   justify-content: space-between;
   width: 794px;
-  /* height: 1123px; */
+  height: 1123px;
   background-color: white;
   color: #2c3e50;
   padding: 20px 15px;

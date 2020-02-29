@@ -2,8 +2,13 @@
   <div :class="smallTitle ? 'leftMove' : ''">
     <div v-if="smallTitle" class="title smallTitle" :class="whiteTitle ? 'title-white' : ''">{{Info.title}}</div>
     <p v-else class="title" :class="whiteTitle ? 'title-white' : ''">{{Info.title}}</p>
-    <ul>
+    <ul v-if="Object.prototype.toString.call(Info.msg) === '[object Array]'">
       <li v-for="i of Info.msg" :key="i">{{i}}</li>
+    </ul>
+    <ul v-else>
+      <li v-for="i of Object.keys(Info.msg)" :key="i">
+        <a :href="Info.msg[i]" target="_blank">{{i}}</a>
+      </li>
     </ul>
   </div>
 </template>
@@ -54,5 +59,8 @@ li{
 }
 .leftMove{
   margin-left: -25px;
+}
+a{
+  text-decoration: none;
 }
 </style>
