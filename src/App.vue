@@ -66,11 +66,10 @@ p {
 .sideBar{
   width: 24%;
   margin-left: 8px;
-  padding: 25px 8px 25px 0;
+  padding: 0 8px 25px 0;
   border-right: solid 1px black; 
   display: inline-flex;
   flex-wrap: wrap;
-  align-content: space-around;
 }
 .projectExperience{
   margin: 15px 0;

@@ -4,19 +4,10 @@
             "title": "NetJSONGraph.js（Google Summer of Code 2019）",
             "msg": [
                 "2019 暑假参加 GSOC 开源活动，为 OpenWISP 组织重写一个 NetJSONGraph.js 库，这个库使用 Canvas 绘制网络设备拓扑，支持力导布局和地理底图。",
-                "在开发前期，我调研了很多可视化库。从底层的 ThreeJS、PixiJS、ZRender，到成熟的 D3、Highcharts、Echarts、SigmaJS 等等，加深了我对可视化的理解。这也使得我在中期开发时游刃有余，开发之余还修补了一些第三方插件的 bug。",
-                "以一个库作者的角度进行设计，拓展了我平时解决问题的思路。在对整个库进行重写的过程中，不断加深我对项目文件划分和代码规范的理解。我必须考虑到所有情况，拆分函数、健壮性测试、兼容旧版本API、代码规范、可迭代、性能等问题。",
-                "最终采用Echarts + Leaflet框架完成了对整个项目的重写，主要难点在于两个框架的不兼容和性能问题",
-                "通过这个项目对开源了解加深，年底还以 mentor 身份，参与了 GCI 的开源活动，帮助高校学生接触开源项目，提升编程技能，与他们一同完善这个项目。"
-            ]
-        },
-        {
-            "title": "个人服务器",
-            "msg": [
-                "该项目主要通过搭建个人后端服务器，来帮助自己更方便地学习前后端新技术。",
-                "项目主要架构：traefik / jaeger / prometheus负责整个docker集群的网关代理、负载均衡、监控、报警、追踪等；",
-                "在其上搭建了serverless框架，后端技术栈nodejs / GraphQL / mongoDB；",
-                "前端利用Vue框架，搭建demo的展示页面，WebGL、WebRTC、blog等。"
+                "在开发前期，进行了技术选型，对 ThreeJS/PixiJS/ZRender/D3/Highcharts/Echarts/SigmaJS 都进行了调研，让我在开发过程中游刃有余。",
+                "最终采用 Echarts + Leaflet 技术栈完成了重写，主要难点在于两个框架的兼容和性能问题。开发之余还修补了一些第三方插件的 Bug。",
+                "以一个库作者的角度进行思考，拓展了我解决问题的思路。在对重写过程中，加深了重构技巧、代码规范、健壮性、API 兼容、可维护性、性能等问题的理解。",
+                "年底以 Mentor 身份，参与了 GCI 的开源活动，帮助高校学生接触开源项目，提升编程技能，与他们一同完善这个项目。"
             ]
         },
         {
@@ -24,7 +15,7 @@
             "msg": [
                 "木犀工作台是团队内部协作工具，包括项目管理，文档库，内部社交圈等等功能",
                 "项目采用 React / Redux 技术栈，我主要负责个人设置 / 成员管理 / 权限控制等模块的前端开发。",
-                "亮点：通过虚拟化Dom，解决了无限列表的性能问题"
+                "引入虚拟 DOM 列表，解决了无限列表的性能问题。引入 Redux 解决了用户信息的状态共享问题。"
             ]
         },
         {
@@ -33,15 +24,24 @@
                 "菁程是一个校企合作求职平台，学生通过完成企业发布的任务求职，企业通过菁程寻找校园精英。获 \"互联网+\" 省赛银奖。",
                 "项目采用 TypeScript / React / dva / umijs 技术栈。我主要负责任务发布、列表、详情等主要模块的开发。"
             ]
+        },
+        {
+            "title": "新技术 Playground",
+            "msg": [
+                "该项目主要通过搭建个人后端服务器，来帮助自己更方便地学习前后端新技术。",
+                "项目主要架构：Traefik/Jaeger/Prometheus 负责整个 Docker 集群的网关代理、负载均衡、监控、报警、追踪等。",
+                "在其上搭建了 Serverless 框架，后端技术栈 Nodejs/GraphQL/MongoDB",
+                "前端利用 Vue 框架，搭建 Demo 的展示页面，包括 WebGL、WebRTC 等等。"
+            ]
         }
     ],
     "PersonalInfo": {
         "name": "王玉飞",
         "job": "求职意向：实习前端开发工程师",
         "intro": [
-            "熟悉主流的前端技术栈，熟悉项目开发的流程和技术方案设计",
-            "木犀团队前端组核心成员，2 年的前端学习、项目开发经验",
             "喜欢钻研新技术，热爱开源",
+            "熟悉主流的前端技术栈，以及前端项目开发的流程和技术方案设计",
+            "木犀团队前端组核心成员，2 年的前端学习、项目开发经验",
             "除前端技术外，对网络安全、游戏开发、图形学等方向也有所涉猎"
         ],
         "signature": "荼靡易逝，苦蛊甘饴​"
@@ -52,7 +52,8 @@
             "msg": [
                 "Phone：17610603152",
                 "Email：zhongliwang48@gmail.com",
-                "Github: github.com/KuTuGu"
+                "Github: github.com/KuTuGu",
+                "Blog: kutugu.github.io"
             ]
         },
         {
@@ -78,8 +79,8 @@
             "title": "项目链接​",
             "msg": {
                 "NetJSONGraph.js": "https://github.com/openwisp/netjsongraph.js/tree/gsoc2019",
-                "Workbench": "https://github.com/Muxi-X/muxi_workbench_fe",
-                "MyServer": "https://github.com/KuTuGu/MyServer",
+                "木犀工作台": "https://github.com/Muxi-X/muxi_workbench_fe",
+                "Playgound": "https://github.com/KuTuGu/MyServer",
                 "Blog": "http://kutugu.github.io/"
             }
         }
