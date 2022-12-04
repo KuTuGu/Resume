@@ -1,42 +1,39 @@
 {
     "ProjectExperience": [
         {
-            "title": "腾讯CSIG 前端实习生",
+          "title": "字节跳动 内容安全前端工程师",
+          "msg": [
+              "2021年7月至今在字节从事前端工程师岗位，负责 人审质量各平台 的业务和技术需求。",
+              "1.中台业务以表单场景居多，单独维护各组件内部状态逻辑杂乱，数据流向不清晰；通过重构将状态外置、URL化，实现 URL 到组件 value 的直接通信，也可以实现场景快照；通过集成测试保证数据和 UI 一致性",
+              "2.历史问题如海内外业务拆分前，代码中存在不同条件分支场景，通过 BFF 层集成下发功能开关，来更好地管理功能分支，发生事故时也能及时回退，降低事故影响面",
+              "3.负责人审质量各平台一体化建设，推进 Monorepo 仓库迁移 和 微前端平台改造"
+          ]
+        },
+        {
+            "title": "腾讯 CSIG 前端实习生",
             "msg": [
-                "2020 暑假有幸成为腾讯CSIG的一名前端实习生，在底层工具、技术和业务需求上都有一定的产出，也收获了很多。",
-                "1.基础工具研发 -- feflow脚手架。基于tencent开源feflow工具，开发feflow的扩展模块，提供脚手架功能；主要用于提供底层的打包、部署、ts、unit test、eslint等功能，在复用配置的基础上，同时保持各个项目代码规范的一致性",
-                "2.技术产出 -- 前端日志工具的实现与重构。利用AOP和事件监听等技术，对前端页面性能、资源加载、用户行为等数据指标进行监控；利用策略模式、观察者模式等设计模式对工具库进行抽象和重构；后端服务采用SCF + Elastic技术栈，实现完整的日志流服务",
-                "3.需求产出 -- 工单数据面板的实时更新。利用Vue + Highcharts框架对工单数据进行动态实时可视化显示；利用日志工具和离线缓存等技术，对面板的使用情况进行日志监控与价值分析"
+                "2020 暑假在腾讯 CSIG 做一名前端实习生，负责 中台客服系统 的业务和技术需求。",
+                "1.基于 Tencent 开源的 Feflow 框架，开发相应的扩展插件：用于提供底层项目的打包、部署、TS、Unit Test、Eslint等功能，保证各项目结构和规范配置的一致性",
+                "2.实现与重构前端日志工具，利用AOP和事件监听等技术，实现性能指标监控的黑盒埋点；利用策略、观察者等设计模式对工具库进行抽象和重构；后端服务采用 SCF + Elastic 技术栈，实现完整的日志流服务",
+                "3.利用 Vue + Highcharts 框架搭建数据可视化面板，对工单数据进行可视化展示；添加日志埋点，对面板的使用情况进行日志监控与价值分析"
             ]
         },
         {
-            "title": "NetJSONGraph.js（Google Summer of Code 2019）",
+            "title": "Google Summer of Code 2019",
             "msg": [
-                "2019 暑假参加 GSOC 开源活动，为 OpenWISP 组织重写一个 NetJSONGraph.js 库，这个库使用 Canvas 绘制网络设备拓扑，支持力导布局和地理底图。",
-                "在开发前期，进行了技术选型，对 ThreeJS/PixiJS/ZRender/D3/Highcharts/Echarts/SigmaJS 都进行了调研，让我在开发过程中游刃有余。",
-                "最终采用 Echarts + Leaflet 技术栈完成了重写，主要难点在于两个框架的兼容和性能问题。开发之余还修补了一些第三方插件的 Bug。",
-                "以一个库作者的角度进行思考，拓展了我解决问题的思路。在对重写过程中，加深了重构技巧、代码规范、健壮性、API 兼容、可维护性、性能等问题的理解。",
-                "年底以 Mentor 身份，参与了 GCI 的开源活动，帮助高校学生接触开源项目，提升编程技能，与他们一同完善这个项目。"
-            ]
-        },
-        {
-            "title": "新技术 Playground",
-            "msg": [
-                "该项目主要通过搭建个人后端服务器，来帮助自己更方便地学习前后端新技术。",
-                "项目主要架构：Traefik/Jaeger/Prometheus 负责整个 Docker 集群的网关代理、负载均衡、监控、报警、追踪等。",
-                "在其上搭建了 Serverless 框架，后端技术栈 Nodejs/GraphQL/MongoDB",
-                "前端利用 Vue 框架，搭建 Demo 的展示页面，包括 WebGL、WebRTC 等等。"
+                "2019 暑假参加 GSOC 开源活动，为 OpenWISP 组织重写一个 NetJSONGraph.js 工具库，使用 Canvas 绘制网络设备拓扑图，支持力导图布局和地理底图。",
+                "1.技术栈采用 Echarts + Leaflet，踩坑了两个框架的兼容性问题，也给第三方插件提了一些PR；利用 WebWorker 并行计算优化性能",
+                "2.年底以 Mentor 身份，参与了 GCI 的开源活动，帮助高校学生接触开源项目提升编程技能，与他们一同完善这个项目。"
             ]
         }
     ],
     "PersonalInfo": {
         "name": "王玉飞",
-        "job": "求职意向：实习前端开发工程师",
+        "job": "求职意向：研发工程师",
         "intro": [
-            "喜欢钻研新技术，热爱开源",
-            "熟悉主流的前端技术栈，以及前端项目开发的流程和技术方案设计",
-            "木犀团队前端组核心成员，2 年的前端学习、项目开发经验",
-            "除前端技术外，对网络安全、游戏开发、图形学等方向也有所涉猎"
+            "JavaScript熟练工，Solidity、Rust新手",
+            "近5年的前端学习、项目开发经验，熟悉主流的前端技术栈、技术方案设计及项目开发流程",
+            "热爱开源、编程，兴趣广泛，对区块链、网络安全、图形学、游戏开发等方向也有所涉猎"
         ],
         "signature": "荼靡易逝，苦蛊甘饴​"
     },
@@ -47,7 +44,8 @@
                 "Phone：17610603152",
                 "Email：zhongliwang48@gmail.com",
                 "Github: github.com/KuTuGu",
-                "Blog: kutugu.github.io"
+                "Blog: kutugu.github.io",
+                "Blog: https://mirror.xyz/0xCb3798bEbDa7B939754794dF7d5966ED756892EA"
             ]
         },
         {
@@ -64,19 +62,11 @@
                 "熟练掌握 HTML、CSS、JavaScript，能编写符合浏览器标准规范的前端页面",
                 "熟悉 HTML5、CSS3、ES6 等标准规范，新标准、新技术",
                 "熟练掌握 React、Vue 等主流的前端框架/库，并理解其基本原理",
-                "熟悉 NPM/Git/Webpack 等工程化基础设施",
+                "熟悉 Git/PNPM/Rollup 等工程化基础设施",
                 "熟悉 ESLint/Jest/TravisCI/Docker 等工具，了解完整的项目开发流程",
-                "熟悉 NodeJS，编写、维护过个人后端服务，对后端开发有基本了解"
+                "熟悉 NodeJS 编写、维护过BFF服务，对后端开发有基本了解",
+                "熟悉区块链技术及合约安全，编写过智能合约和套利脚本"
             ]
-        },
-        {
-            "title": "项目链接​",
-            "msg": {
-                "NetJSONGraph.js": "https://github.com/openwisp/netjsongraph.js/tree/gsoc2019",
-                "木犀工作台": "https://github.com/Muxi-X/muxi_workbench_fe",
-                "Playgound": "https://github.com/KuTuGu/MyServer",
-                "Blog": "http://kutugu.github.io/"
-            }
         }
     ]
 }
