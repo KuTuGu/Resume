@@ -1,47 +1,31 @@
 <template>
-  <div id="app">
+  <div id="resume">
     <div class="sideBar">
-      <div v-for="i of Info.sideBar" :key="i">
-        <InfoItem :Info="i" :smallTitle="true"/>
+      <div v-for="(i, key) of info.SideBar" :key="key">
+        <InfoItem :info="i" :smallTitle="true"/>
       </div>
     </div>
     <div class="mainContent">
-      <PersonalInfo :Info="Info.PersonalInfo" />
-      <!-- <ProjectExperience :Info="Info.ProjectExperience" /> -->
+      <PersonalInfo :info="info.PersonalInfo" />
       <div class="projectExperience">项目经历</div>
-      <div v-for="i of Info.ProjectExperience" :key="i">
-        <InfoItem :Info="i" :whiteTitle="true" />
+      <div v-for="(i, key) of info.ProjectExperience" :key="key">
+        <InfoItem :info="i" :whiteTitle="true" />
       </div>
     </div>
   </div>
 </template>
 
-<script>
-import InfoItem from './components/infoItem.vue'
-import PersonalInfo from './components/personalInfo.vue'
+<script setup lang="ts">
+import { ref } from 'vue';
+import InfoItem from './components/InfoItem.vue'
+import PersonalInfo from './components/PersonalInfo.vue'
 import Info from "./info.json"
 
-export default {
-  name: 'App',
-  components: {
-    InfoItem,
-    PersonalInfo
-  },
-  data: () => ({
-    Info,
-  }),
-} 
+const info = ref(Info);
 </script>
 
 <style>
-html, body{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #D9D9D9;
-}
-#app {
+#resume {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -56,14 +40,13 @@ html, body{
   overflow: hidden;
   box-sizing: border-box;
 }
-p {
-  margin: 10px 0;
-}
-.mainContent, .sideBar{
+
+.mainContent, .sideBar {
   display: inline-block;
   width: 72%;
 }
-.sideBar{
+
+.sideBar {
   width: 24%;
   margin-left: 8px;
   padding: 0 8px 25px 0;
@@ -71,7 +54,8 @@ p {
   display: inline-flex;
   flex-wrap: wrap;
 }
-.projectExperience{
+
+.projectExperience {
   margin: 15px 0;
   font-size: 20px;
   width: 30%;

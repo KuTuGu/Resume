@@ -8,14 +8,11 @@ cache:
     - "node_modules"
 
 install:
-  - npm install
+  - npm install -g pnpm
+  - pnpm install
   
 script:
-  - npm run test
-  - npm run build
-
-after_success:
-  # - npm run cover
+  - pnpm run build
 
 deploy:
   provider: pages

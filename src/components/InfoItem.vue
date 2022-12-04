@@ -1,66 +1,63 @@
 <template>
   <div :class="smallTitle ? 'leftMove' : ''">
-    <div v-if="smallTitle" class="title smallTitle" :class="whiteTitle ? 'title-white' : ''">{{Info.title}}</div>
-    <p v-else class="title" :class="whiteTitle ? 'title-white' : ''">{{Info.title}}</p>
-    <ul v-if="Object.prototype.toString.call(Info.msg) === '[object Array]'">
-      <li v-for="i of Info.msg" :key="i">{{i}}</li>
+    <div v-if="smallTitle" class="title smallTitle" :class="whiteTitle ? 'title-white' : ''">{{info.title}}</div>
+    <p v-else class="title" :class="whiteTitle ? 'title-white' : ''">{{info.title}}</p>
+    <ul v-if="Array.isArray(info.msg)">
+      <li v-for="(i, key) of info.msg" :key="key">{{i}}</li>
     </ul>
     <ul v-else>
-      <li v-for="i of Object.keys(Info.msg)" :key="i">
-        <a :href="Info.msg[i]" target="_blank">{{i}}</a>
+      <li v-for="(i, key) of Object.keys(info.msg)" :key="key">
+        <a :href="info.msg[i]" target="_blank">{{i}}</a>
       </li>
     </ul>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'InfoItem',
-  props: {
-    Info: {
-      title: String,
-      msg: Array,
+<script setup lang="ts">
+  defineProps<{
+    info: {
+      title: string;
+      msg: Array<string> | Record<string, string>;
     },
-    whiteTitle: Boolean,
-    smallTitle: Boolean,
-  },
-}
+    whiteTitle?: boolean;
+    smallTitle?: boolean;
+  }>()
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.title{
+.title {
   text-align: center;
   background-color: #333333;
   color: white;
   padding: 2px 5px;
   border: solid 1px black;
 }
-.title-white{
+.title-white {
   background-color: white;
   color: black;
   font-weight: bold;
   text-align: left;
   padding-left: 15px; 
 }
-.smallTitle{
+.smallTitle {
   display: inline-block;
   padding: 2px 25px;
   margin-left: 20px; 
 }
-ul{
+ul {
   padding-right: 10px;
   padding-inline-start: 2em;
 }
-li{
+li {
   word-break:break-all;
   font-size: 14px;
   margin: 5px 0;
 }
-.leftMove{
+.leftMove {
   margin-left: -25px;
 }
-a{
+a {
   text-decoration: none;
 }
 </style>

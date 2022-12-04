@@ -17,6 +17,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Version lock
+pnpm-lock.yaml
 package-lock.json
 yarn.lock
 
